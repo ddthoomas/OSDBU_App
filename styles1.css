@@ -1,0 +1,60 @@
+h4{
+color:purple;
+}
+h1{
+ color:purple;
+}
+h10{
+color:blue;
+}
+h11{
+color:red;
+}
+.ui-page {
+
+  /* Location of the image*/
+  background-image: url(DeptOfTheTreasury.png);
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  /*background-size: cover;*/
+
+  /* Set a background color that will be displayed
+     while the background image is loading
+   background: #196dff;*/
+}
+#menu {
+
+display:table;
+
+  margin:0 auto;
+}
+#menu a {
+  text-decoration:none;
+  float:left;
+  height:75px;
+  color:white;
+  font-weight:bold;
+  background-color:rgba(0,0,25,0.3);
+  border:1px solid green;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  width:100px;
+padding-top:50px;
+}
+/* class of clr*/
+.clr {
+  clear: left;
+}
+
