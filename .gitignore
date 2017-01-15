@@ -1,12 +1,1290 @@
-*.class
+<!DOCTYPE html>
+<html>
+<head>
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title of the document</title>
+    <link rel="stylesheet"  type="text/css" href="styles1.css">
+    <link rel="stylesheet"  type="text/css" href="jquery.mobile-1.4.5.min.css">
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <script src="fastclick.js"></script>
+    <!--<script src="scripts/jquery-1.11.2.min.js"></script>-->
+    <script>
+        $(function(){
+        FastClick.attach(document.body);
+        });
+    </script>
+</head>
 
-# Package Files #
-*.jar
-*.war
-*.ear
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+<body>
+
+<div data-role="page" id="welcome">
+
+    <div data-role="header" data-add-back-btn="true" data-position="fixed">
+        <h1>Welcome</h1>
+        <a href="#gridmenu" data-rel="popup" class="ui-btn ui-btn-right ui-icon-grid ui-btn-icon-left">Menu</a>
+
+            <div data-role="popup" id="gridmenu">
+                <p><a href="#TF" class="ui-btn">Treasury Forecast</a></p>
+                <p><a href="#VO" class="ui-btn">Vendor</a></p>
+                <p><a href="#TDB" class="ui-btn">Business</a></p>
+                <p><a href="#Ext" class="ui-btn">Extra</a></p>
+            </div>
+        <div data-role="navbar" data-grid="d" class="ui-navbar ui-mini" role="navigation">
+            <ul class="ui-grid-d">
+                <li class="ui-block-a"><a href="#welcome" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c ui-btn ui-btn-inline ui-btn-up-c ui-btn-active ui-state-persist"><span class="ui-btn-inner"><span class="ui-btn-text">Welcome</span></span></a></li>
+                <li class="ui-block-b"><a href="#TF" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Forecast</span></span></a></li>
+                <li class="ui-block-c"><a href="#VO" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Vendor</span></span></a></li>
+                <li class="ui-block-d"><a href="#TDB" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Business</span></span></a></li>
+                <li class="ui-block-e"><a href="#Ext" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Extra</span></span></a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+
+
+        <div id="menu">
+            <a href="#TF">
+                Treasury Forecast
+            </a>
+
+            <a href="#VO">
+                Vendor Outreach Sessions
+            </a>
+
+            <!-- using clr class-->
+            <a href="#TDB" class="clr">
+                To-Do-Business
+            </a>
+            <a href="#Ext">
+                Extra
+            </a>
+        </div>
+
+        <p>I'm first in the source order so I'm shown as the page.</p>
+        <p>View internal page called <a href="#bar">bar</a></p>
+
+    </div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
+
+
+
+
+</div>
+
+<div data-role="page" id="TF">
+
+    <div data-role="header" data-add-back-btn="true" data-position="fixed">
+        <h1>Treasury_Forecast</h1>
+        <a href="#gridmenu1" data-rel="popup" class="ui-btn ui-btn-right ui-icon-grid ui-btn-icon-left">Menu</a>
+
+        <div data-role="popup" id="gridmenu1">
+            <p><a href="#TF" class="ui-btn">Treasury Forecast</a></p>
+            <p><a href="#VO" class="ui-btn">Vendor</a></p>
+            <p><a href="#TDB" class="ui-btn">Business</a></p>
+            <p><a href="#Ext" class="ui-btn">Extra</a></p>
+        </div>
+
+        <div data-role="navbar" data-grid="d" class="ui-navbar ui-mini" role="navigation">
+            <ul class="ui-grid-d">
+                <li class="ui-block-a"><a href="#welcome" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">Welcome</span></span></a></li>
+                <li class="ui-block-b"><a href="#TF" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c ui-btn ui-btn-inline ui-btn-up-c ui-btn-active ui-state-persist"><span class="ui-btn-inner"><span class="ui-btn-text">Forecast</span></span></a></li>
+                <li class="ui-block-c"><a href="#VO" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Vendor</span></span></a></li>
+                <li class="ui-block-d"><a href="#TDB" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Business</span></span></a></li>
+                <li class="ui-block-e"><a href="#Ext" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Extra</span></span></a></li>
+            </ul>
+
+        </div><!-- /navbar -->
+    </div><!-- /header -->
+
+    <div>&nbsp;</div>
+
+    <div class="center">
+        <div data-role="collapsible">
+            <h1>Fiscal Year 2015 - Forecast of Contract Opportunities</h1>
+            <p>The Department of the Treasury Forecast of Contract Opportunities includes projections of all anticipated contract actions above $150,000 that small businesses</p>
+            <p><b>Caution</b> These links will download the real <b>PDF</b></p>
+            <table style="font-size:75%" border="1"><tr>
+                <th scope="col"><strong>Bureau</strong></th>
+                <th scope="col"><strong>Existing Contracts</strong></th>
+                <th scope="col"><strong>New Contracts</strong></th>
+            </tr>
+            <tr><td style="text-align:center"><a href="http://www.treasury.gov/resource-center/sb-programs/SiteAssets/Pages/dcfo-osdbu-mp-forecast/BUREAU%20OF%20ENGRAVING%20and%20PRINTING.pdf">
+                <h11>Bureau of Engraving & Printing</h11></a></td>
+                <td style="text-align:center"><a href="http://www.treasury.gov/resource-center/sb-programs/SiteAssets/Pages/dcfo-osdbu-mp-forecast/BEP%20Existing%20forecast%20updat%202-19-14%20rev%203-11-14.pdf">
+                    Existing Contracts</a></td>
+                <td style="text-align:center"><a href="http://www.treasury.gov/resource-center/sb-programs/SiteAssets/Pages/dcfo-osdbu-mp-forecast/FY15%20Forecast%20for%20Submittal%20to%20Treasury%20New%20BEP.pdf">
+                    New Contract Opportunities</a></td></tr>
+            <tr><td style="text-align:center"><a href="http://www.treasury.gov/resource-center/sb-programs/SiteAssets/Pages/dcfo-osdbu-mp-forecast/BFS%20R1.pdf">
+                <h11>Bureau of the Fiscal Service</h11></a></td>
+                <td style="text-align:center"><a href="http://www.treasury.gov/resource-center/sb-programs/SiteAssets/Pages/dcfo-osdbu-mp-forecast/FY15%20Fiscal%20Service%20Existing%20Contracts.pdf">
+                    Existing Contracts</a></td>
+                <td style="text-align:center"><a href="http://www.treasury.gov/resource-center/sb-programs/SiteAssets/Pages/dcfo-osdbu-mp-forecast/Fiscal%20Service%20FY%202015%20Forecast%20of%20New%20Contract%20Opportunities%20FINAL.pdf">
+                    New Contract Opportunities</a></td></tr>
+            <tr><td style="text-align:center"><a href="http://www.treasury.gov/resource-center/sb-programs/SiteAssets/Pages/dcfo-osdbu-mp-forecast/BUREAU%20OF%20TAX%20AND%20TRADE%207-2013.pdf">
+                <h11>Alcohol and Tobacco Tax and Trade</h11></a></td>
+                <td style="text-align:center"><a href="http://www.treasury.gov/resource-center/sb-programs/SiteAssets/Pages/dcfo-osdbu-mp-forecast/TTB%20FY%202015%20Existing%20Contract%20Listing.pdf">
+                    Existing Contracts</a></td>
+                <td style="text-align:center"><a href="http://www.treasury.gov/resource-center/sb-programs/SiteAssets/Pages/dcfo-osdbu-mp-forecast/TTB%27s%20FY%202015%20Forecast%20of%20New%20Contract%20Opportunities.pdf">
+                    New Contract Opportunities</a></td></tr>
+            <tr><td style="text-align:center"><a href="">
+                <h11>US Mint</h11></a></td>
+                <td style="text-align:center"><a href="">
+                    Existing Contracts</a></td>
+                <td style="text-align:center"><a href="">
+                    New Contract Opportunities</a></td></tr>
+            <tr><td style="text-align:center"><a href="">
+                <h11>Internal Revenue Service</h11></a></td>
+                <td style="text-align:center"><a href="">
+                    Existing Contracts</a></td>
+                <td style="text-align:center"><a href="">
+                    New Contract Opportunities</a></td></tr>
+            <tr><td style="text-align:center"><a href="">
+                <h11>Community Development Financial Institutions Fund</h11></a></td>
+                <td style="text-align:center"><a href="">
+                    Existing Contracts</a></td>
+                <td style="text-align:center"><a href="">
+                    New Contract Opportunities</a></td></tr>
+            <tr><td style="text-align:center"><a href="">
+                <h11>Departmental Offices</h11></a></td>
+                <td style="text-align:center"><a href="">
+                    Existing Contracts</a></td>
+                <td style="text-align:center"><a href="">
+                    New Contract Opportunities</a></td></tr>
+            <tr><td style="text-align:center"><a href="">
+                <h11>Financial Crimes Enforcement Network</h11></a></td>
+                <td style="text-align:center"><a href="">
+                    Existing Contracts</a></td>
+                <td style="text-align:center"><a href="">
+                    New Contract Opportunities</a></td></tr>
+            <tr><td style="text-align:center"><a href="">
+                <h11>Comptroller of the Currency</h11></a></td>
+                <td style="text-align:center"><a href="">
+                    Existing Contracts</a></td>
+                <td style="text-align:center"><a href="">
+                    New Contract Opportunities</a></td>
+            </tr>
+            </table>
+        </div>
+
+
+        <div role="main" class="ui-content">
+            <p>I'm second page in the source order so I'm shown as the page.</p>
+            <p>View internal page called <a href="#bar">bar</a></p>
+        </div><!-- /content -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div>
+</div>
+
+<div data-role="page" id="VO">
+
+    <div data-role="header" data-add-back-btn="true" data-position="fixed">
+        <h1>Vendor Outreach Session</h1>
+        <a href="#gridmenu2" data-rel="popup" class="ui-btn ui-btn-right ui-icon-grid ui-btn-icon-left">Menu</a>
+
+        <div data-role="popup" id="gridmenu2">
+            <p><a href="#TF" class="ui-btn">Treasury Forecast</a></p>
+            <p><a href="#VO" class="ui-btn">Vendor</a></p>
+            <p><a href="#TDB" class="ui-btn">Business</a></p>
+            <p><a href="#Ext" class="ui-btn">Extra</a></p>
+        </div>
+
+        <div data-role="navbar" data-grid="d" class="ui-navbar ui-mini" role="navigation">
+            <ul class="ui-grid-d">
+                <li class="ui-block-a"><a href="#welcome" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">Welcome</span></span></a></li>
+                <li class="ui-block-b"><a href="#TF" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Forecast</span></span></a></li>
+                <li class="ui-block-c"><a href="#VO" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c ui-btn ui-btn-inline ui-btn-up-c ui-btn-active ui-state-persist"><span class="ui-btn-inner"><span class="ui-btn-text">Vendor</span></span></a></li>
+                <li class="ui-block-d"><a href="#TDB" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Business</span></span></a></li>
+                <li class="ui-block-e"><a href="#Ext" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Extra</span></span></a></li>
+            </ul>
+
+        </div><!-- /navbar -->
+    </div><!-- /header -->
+
+    <div>&nbsp;</div>
+
+
+    <div class="center">
+        <div data-role="main" class="ui-content">
+            <div data-role="collapsible">
+                <h1>Outreach Activities</h1>
+                <h3>Registration Procedures for the Department of Treasury Vendor Outreach Session</h3>
+                <div>&nbsp</div>
+                <p>To schedule appointment, please do the following</p>
+                <div>&nbsp</div>
+                <p><b>1.)</b> Click this link <a href="https://sbecs.treas.gov/">SBECS.Treas</a> and register your firm to do business</p>
+                <div>&nbsp</div>
+                <p><b>2.)</b> After registering, log into SB-eCS using login and password</p>
+                <div>&nbsp</div>
+                <p><b>3.)</b> Select upcoming Vendor Outreach Session</p>
+                <div>&nbsp</div>
+                <p><b>4.)</b> Print a copy of appointment schedule</p>
+                <div data-role="collapsible">
+                    <h1>Help</h1>
+                    <p>send email to Robin.Byrd@treasury.gov. </p>
+                </div>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <div data-role="collapsible">
+                    <h1>Register</h1>
+                    <a href="https://sbecs.treas.gov/">Register</a>
+                </div>
+            </div>
+
+
+
+            <div role="main" class="ui-content">
+                <p>I'm third page in the source order so I'm shown as the page.</p>
+                <p>View internal page called <a href="#bar">bar</a></p>
+            </div><!-- /content -->
+
+            <div data-role="footer" data-position="fixed">
+                <h4>Page Footer</h4>
+            </div><!-- /footer -->
+
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="TDB">
+
+<div data-role="header" data-add-back-btn="true" data-position="fixed">
+    <h1>To-Do-Business</h1>
+    <a href="#gridmenu3" data-rel="popup" class="ui-btn ui-btn-right ui-icon-grid ui-btn-icon-left">Menu</a>
+
+    <div data-role="popup" id="gridmenu3">
+        <p><a href="#TF" class="ui-btn">Treasury Forecast</a></p>
+        <p><a href="#VO" class="ui-btn">Vendor</a></p>
+        <p><a href="#TDB" class="ui-btn">Business</a></p>
+        <p><a href="#Ext" class="ui-btn">Extra</a></p>
+    </div>
+
+    <div data-role="navbar" data-grid="d" class="ui-navbar ui-mini" role="navigation">
+        <ul class="ui-grid-d">
+            <li class="ui-block-a"><a href="#welcome" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">Welcome</span></span></a></li>
+            <li class="ui-block-b"><a href="#TF" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Forecast</span></span></a></li>
+            <li class="ui-block-c"><a href="#VO" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Vendor</span></span></a></li>
+            <li class="ui-block-d"><a href="#TDB" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c ui-btn ui-btn-inline ui-btn-up-c ui-btn-active ui-state-persist"><span class="ui-btn-inner"><span class="ui-btn-text">Business</span></span></a></li>
+            <li class="ui-block-e"><a href="#Ext" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Extra</span></span></a></li>
+        </ul>
+
+    </div><!-- /navbar -->
+</div><!-- /header -->
+
+<div data-role="main" class="ui-content" id="pageone" >
+    <div data-role="collapsible" data-collapsed="true">
+        <h1>Steps_To_Success</h1>
+        <h2>Part 1:Introduction</h2>
+
+        <div data-role="main" class=ui-content">
+            <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Introduction</a>
+
+
+            <div data-role="panel" id="myPanel" data-display="overlay">
+                <h2>Part 1: Steps_To_Success</h2>
+                <p>"Doing Business with the Department of the Treasury" is designed to assist small businesses</p>
+                <a href="#foreword" data-rel="popup" class="ui-btn" data-transition="slide">Foreword</a>
+                <a href="#regulations" data-rel="popup" class="ui-btn" data-transition="slide">Regulations</a>
+                <a href="#basic" data-rel="popup" class="ui-btn" data-transition="slide">Basic</a>
+                <a href="#difference" data-rel="popup" class="ui-btn" data-transition="slide">Difference</a>
+                <a href="#define" data-rel="popup" class="ui-btn" data-transition="slide">Define</a>
+                <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part1-01-foreword.aspx" class="ui-btn">Official Website</a>
+                <a href="#" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+            </div>
+
+            <h2>Part 2: Procurement Procedures</h2>
+            <a href="#myPanel2" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Procedures</a>
+
+            <div data-role="panel" id="myPanel2" data-display="overlay">
+                <h2>Part 2: Procurement</h2>
+                <p>The Department of the Treasury purchases its supplies, materials, equipment, and services</p>
+                <a href="#purchase" data-rel="popup" class="ui-btn" data-transition="slide">Purchase</a>
+                <a href="#micro" data-rel="popup" class="ui-btn" data-transition="slide">Micro-purchases</a>
+                <a href="#acquisitions" data-rel="popup" class="ui-btn" data-transition="slide">Acquisitions</a>
+                <a href="#awards" data-rel="popup" class="ui-btn" data-transition="slide">Awards</a>
+                <a href="#contract" data-rel="popup" class="ui-btn" data-transition="slide">Contract Procedures</a>
+                <!--<a href="#sealed" data-rel="popup" class="ui-btn" data-transition="slide">Sealed Bidding</a>
+                <a href="#negotiated" data-rel="popup" class="ui-btn" data-transition="slide">Negotiated Procurement</a>
+                <a href="#tips" data-rel="popup" class="ui-btn" data-transition="slide">Tips for Contract</a>
+                <a href="#administration" data-rel="popup" class="ui-btn" data-transition="slide">Administration Programs</a>
+                <a href="#unsolicited" data-rel="popup" class="ui-btn" data-transition="slide">Unsolicited Proposals</a>-->
+                <a href="http://www.treasury.gov/resource-center/sb-programs/Pages/contacts-small-biz-specialists.aspx" class="ui-btn">Official Website</a>
+                <a href="#2" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+            </div>
+
+
+            <h2>Part 3: Treasury Bureau Who's Who</h2>
+
+            <a href="#myPanel3" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Bureau</a>
+
+            <div data-role="panel" id="myPanel3" data-display="overlay">
+                <h2>Part 3: Treasury Bureau Who's Who</h2>
+                <p>This site contains the addresses of all major Treasury bureau procurement offices with links</p>
+                <a href="#policy" data-rel="popup" class="ui-btn" data-transition="slide">Procurement Policy</a>
+                <a href="#OSDBU" data-rel="popup" class="ui-btn" data-transition="slide">OSDBU</a>
+                <a href="#OSDBU_1" data-rel="popup" class="ui-btn" data-transition="slide">OSDBU-Overview</a>
+                <a href="#competition" data-rel="popup" class="ui-btn" data-transition="slide">Advocacy Program</a>
+                <a href="#sbo" data-rel="popup" class="ui-btn" data-transition="slide">Opportunities</a>
+                <a href="http://www.treasury.gov/resource-center/sb-programs/Pages/contacts-small-biz-specialists.aspx" class="ui-btn">Official Website</a>
+                <a href="#3" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<div data-role="main" class="ui-content" id="pagetwo">
+    <div data-role="collapsible" data-collapsed="true">
+
+        <h1>Contact</h1>
+        <h3>Contact Panel List</h3>
+
+        <div data-role="main" class="ui-content">
+
+            <a href="#myPanel_1" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Bureau Small Business Specialists</a>
+
+            <div data-role="panel" id="myPanel_1" data-display="overlay">
+                <h2>Bureau Small Business Specialists</h2>
+                <p>This site contains the addresses of all Bureau Small Business Specialists</p>
+                <a href="#bureau" data-rel="popup" class="ui-btn" data-transition="slide">Bureau</a>
+                <a href="#specialist" data-rel="popup" class="ui-btn" data-transition="slide">Specialist</a>
+                <a href="#phone" data-rel="popup" class="ui-btn" data-transition="slide">Phone</a>
+                <a href="#address" data-rel="popup" class="ui-btn" data-transition="slide">Address</a>
+                <a href="http://www.treasury.gov/resource-center/sb-programs/Pages/contacts-small-biz-specialists.aspx" class="ui-btn">Official Website</a>
+                <a href="#1" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+            </div>
+
+            <!-- This examples works so use it -->
+
+            <a href="#myPanel_2" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Bureau Simplified acquisition Contacts</a>
+
+            <div data-role="panel" id="myPanel_2" data-display="overlay">
+                <h2>Bureau Simplified acquisition Contacts</h2>
+                <p>This site contains the addresses of all Bureau Simplified acquisition</p>
+                <a href="#bureau1" data-rel="popup" class="ui-btn" data-transition="slide">Bureau</a>
+                <a href="#specialist1" data-rel="popup" class="ui-btn" data-transition="slide">Specialist</a>
+                <a href="#phone1" data-rel="popup" class="ui-btn" data-transition="slide">Phone</a>
+                <a href="#address1" data-rel="popup" class="ui-btn" data-transition="slide">Address</a>
+                <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-contacts-simp.aspx" class="ui-btn">Official Website</a>
+                <a href="#2" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+            </div> <!-- This examples works so use it -->
+
+            <a href="#myPanel_3" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Office of Small and Disadvantaged Business Utilization</a>
+
+            <div data-role="panel" id="myPanel_3" data-display="overlay">
+                <h2>Office of Small and Disadvantaged Business Utilization</h2>
+                <p>This site contains Contacts listed below can provide information on specific Small Business Program preference groups. </p>
+                <a href="#name2" data-rel="popup" class="ui-btn" data-transition="slide">Name</a>
+                <a href="#office2" data-rel="popup" class="ui-btn" data-transition="slide">Office</a>
+                <a href="#phone2" data-rel="popup" class="ui-btn" data-transition="slide">Phone</a>
+                <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-contacts-osdbu.aspx" class="ui-btn">Official Website</a>
+                <a href="#3" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+            </div>
+
+            <a href="#myPanel_4" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">List of Government Agency Offices</a>
+
+            <div data-role="panel" id="myPanel_4" data-display="overlay">
+                <h2>List of Government Agency Offices of Small & Disadvantaged Business Utilization</h2>
+                <p>This site is under construction</p>
+                <!--<a href="#bureau" data-rel="popup" class="ui-btn" data-transition="slide">Bureau</a>
+                <a href="#specialist" data-rel="popup" class="ui-btn" data-transition="slide">Specialist</a>
+                <a href="#phone" data-rel="popup" class="ui-btn" data-transition="slide">Phone</a>
+                <a href="#address" data-rel="popup" class="ui-btn" data-transition="slide">Address</a>-->
+                <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-contacts.aspx" class="ui-btn">Official Website</a>
+                <a href="#4" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-collapsed="true">
+
+        <h1>Goals</h1>
+        <h3>Fiscal Year 2015 Small Business Program Goals</h3>
+        <p>I'm the expanded content</p>
+        <!-- Noah (table) http://www.treasury.gov/resource-center/sb-programs/Pages/Fiscal-Year-2010-and-2011-Small-Business-Program-Goals.aspx -->
+        <table style="font-size:75%" border="1"><tr>
+            <th scope="col"><strong>Bureau</strong></th>
+            <th scope="col"><strong>Existing Contracts</strong></th>
+        </tr>
+            <tr><td><b>Prime Contracts</b></td>
+                <td></td></tr>
+            <tr><td style="text-align:center"><h10>Small Business</h10></td>
+                <td style="text-align:center"><h11>35.00%</h11></td></tr>
+            <tr><td style="text-align:center"><h10>Small Disadvantaged Business</h10></td>
+                <td style="text-align:center"><h11>5%</h11></td></tr>
+            <tr><td style="text-align:center"><h10>Woman-Owned</h10></td>
+                <td style="text-align:center"><h11>5%</h11></td></tr>
+            <tr><td style="text-align:center"><h10>Service-Disabled Veteran-Owned Small Business</h10></td>
+                <td style="text-align:center"><h11>3%</h11></td></tr>
+            <tr><td style="text-align:center"><h10>HUBZone Small Business</h10></td>
+                <td style="text-align:center"><h11>3%</h11></td>
+            <tr><td><b>Subcontracts</b></td>
+                <td></td></tr>
+            <tr><td style="text-align:center"><h10>Small Business</h10></td>
+                <td style="text-align:center"><h11>21.67%</h11></td></tr>
+            <tr><td style="text-align:center"><h10>Small Disadvantaged Business</h10></td>
+                <td style="text-align:center"><h11>5.0%</h11></td></tr>
+            <tr><td style="text-align:center"><h10>Women-Owned Small Business</h10></td>
+                <td style="text-align:center"><h11>5%</h11></td></tr>
+            <tr><td style="text-align:center"><h10>HUBZone Small Business</h10></td>
+                <td style="text-align:center"><h11>3%</h11></td></tr>
+            <tr><td style="text-align:center"><h10>Service-Disabled Veteran-Owned Small Business</h10></td>
+                <td style="text-align:center"><h11>3%</h11></td>
+            </tr>
+            </table>
+    </div>
+</div>
+
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-collapsed="true">
+
+        <h1>Spending</h1>
+        <p>I'm the expanded content</p> <!-- weblink (http://www.treasury.gov/resource-center/sb-programs/Pages/Fiscal-Year-2010-and-2011-Small-Business-Program-Goals.aspx) -->
+
+        <table style="font-size:75%" border="1"><tr>
+            <th scope="col"><strong>Bureau</strong></th>
+            <th scope="col"><strong>Existing Contract</strong></th>
+            <th scope="col">New Contracts</th></tr>
+        <tr><td><h10>Bureau of Engraving &amp; Printing</h10></td>
+            <td>Existing Contracts</td>
+            <td>Coming Soon!</td></tr>
+        <tr><td><h10>Bureau of the Fiscal Service</h10></td>
+            <td>Existing Contracts</td>
+            <td>New Contract Opportunities</td></tr>
+        <tr><td><h10>Alcohol and Tobacco Tax and Trade</h10></td>
+            <td>Existing Contracts</td>
+            <td>New Contract Opportunities</td></tr>
+        <tr><td><h10>US Mint</h10></td>
+            <td>Existing Contracts</td>
+            <td>New Contract Opportunities</td></tr>
+        <tr><td><h10>Internal Revenue Service</h10></td>
+            <td>Existing Contracts</td>
+            <td>New Contract Opportunities</td></tr>
+        <tr><td><h10>Community Development Financial Institutions Fund</h10></td>
+            <td>Existing Contracts</td>
+            <td>New Contract Opportunities</td></tr>
+        <tr><td><h10>Departmental Offices</h10></td>
+            <td>Existing Contracts</td>
+            <td>New Contract Opportunities</td></tr>
+        <tr><td><h10>Financial &amp; Crimes Enforcement Network</h10></td>
+            <td>Existing Contracts</td>
+            <td>New Contract Opportunities</td></tr>
+        <tr><td><h10>Comptroller of the Currency</h10></td>
+            <td>Existing Contracts</td>
+            <td>New Contract Opportunities</td>
+
+        </tr>
+        </table>
+
+    </div>
+</div>
+<!--Section 1-Part 1-->
+<div data-role="popup" id="foreword" class="ui-content">
+
+    <h4>The mission of the Department of the Treasury includes formulating and recommending financial, tax, and fiscal policies, serving as financial agent for the U.S. Government</h4>
+
+    <div data-role="footer"> <a class="ui-btn" href="#foreword">Close</a> &nbsp;&nbsp;&nbsp;<a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part1-01-foreword.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="regulations" class="ui-content">
+
+    <h4>Most Treasury acquisition activities are governed by the "Federal Acquisition Regulation" (FAR). (The U.S. Mint is exempt.) The FAR is codified as Chapter 1 of Title 48</h4>
+    <div data-role="footer"><a href="#regulations">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part1-02-regulations.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="basic" class="ui-content">
+
+    <h4>Be aware of four basic principles underlying Department of the Treasury and federal agencies' contracting process.First, to ensure reasonable prices, contracts are awarded competitively</h4>
+    <div data-role="footer"><a href="#basic">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part1-03-contracting.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="difference" class="ui-content">
+
+    <h4>Major Differences Between Commercial and Government Practices. government contracting also has some unique aspects that you should be aware of</h4>
+    <div data-role="footer"> <a href="#difference">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part1-04-majordiff.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="define" class="ui-content">
+
+    <h4>This body of definitions is called "size standards" and can be found in Title 13 of the Code of Federal Regulations (CFR), Part 121. Small business is defined using size guidelines for the different categories of business enterprises, which include agricultural production</h4>
+    <div data-role="footer"> <a href="#define">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part1-index.aspx">Find Out More</a>
+    </div>
+</div>
+
+<!--Section 1 Part 2-->
+<div data-role="popup" id="purchase" class="ui-content">
+    <h4>
+        Commonly-used office supplies, office furniture and furnishings and office machines are usually obtained from mandatory sources or through Federal Supply Schedule Contract sources, as appropriate.
+    </h4>
+    <table style="font-size:75%" border="1"><tr>
+        <th scope="col"><strong>Pre-existing Contract Vehicle</strong></th>
+        <th scope="col"><strong>OR</strong></th>
+        <th scope="col"><strong>Open Market Procurement</strong></th>
+    </tr>
+        <tr><td style="text-align:left"><h11>For example, amp; the contracting officer may consider the GSA</h11><div>&nbsp</div>
+            <h11> Federal Supply Schedule to meet the requirement by</h11><div>&nbsp</div>
+            <h11>placing a task or delivery order against a GSA schedule contract;</h11></td>
+            <td></td>
+            <td style="text-align:left"><b>At this point, the contracting officer follows the procedures</b><div>&nbsp</div><b> at FAR 19 (there is no order of precedence for set-asides):</b>
+                <div>&nbsp</div>
+                <h10>1)  Small Business Set-Aside;
+                    <div>&nbsp</div>
+                    2) HUBZone Set-Aside; <div>&nbsp</div>
+                    3) Service Disabled Veteran-Owned Small Business Set-Aside;</h10></td>
+        </tr>
+    </table>
+    <div data-role="footer"> <a href="#purchase">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part2-01-practices.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="micro" class="ui-content">
+    <h4>
+        Micro-Purchases are purchases under $3,000.00
+        </h4>
+    <p>
+        No Competition Required (Only One Source Needs to Be Contacted)</p>
+        <div>&nbsp</div>
+    <p>    Any Type of Business May Be Contacted (Large or Small). However, Use of Small Businesses Are Encouraged</p>
+        <div>&nbsp</div>
+    <p>    Purchases Are Usually Made by Use of the Government Purchase Card</p>
+        <div>&nbsp</div>
+    <p>For additional information, please contact the appropriate <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/cardcontacts.shtml.aspx">Bureau Purchase Card Liaison</a>
+    </p>
+    <div data-role="footer"> <a href="#micro">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part2-02-micropurchases.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="acquisitions" class="ui-content">
+    <h4>
+        Simplified Acquisitions is the term given for purchases between $3,000.00 and $150,000.00
+    </h4>
+    <div>&nbsp</div>
+    <p>
+        Purchases between $3,000.00 and $25,000.00</p>
+    <div>&nbsp</div>
+
+        <p>Recommended as a "Foot in the Door" to Government Contracts</p>
+        <p>Typically Not Formally Publicly Advertised (I.e., No Synopsis in FedBizOpps or Advertised on the Bureau Bid Board)</p>
+        <p>Government Must Solicit Three Sources (Either Orally or in Writing)</p>
+        <p>Purchases Are Reserved Exclusively for Small Business Concerns</p>
+        <p>8(a) Procedures May Be Used [Only One Source Would Be Contacted, If 8(a)]</p>
+
+    <div data-role="footer"> <a href="#acquisitions">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/osdbu-how-to-part2-03-simplified-acquisitions.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="awards" class="ui-content">
+    <h4>
+        Verify that the bureau with whom you wish to do business actually buys the goods or services your company can provide by reviewing the Top 25 Listing.
+    </h4>
+    <div data-role="footer"> <a href="#awards">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part2-04-simplified-acquisition-awards.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="contract" class="ui-content">
+    <h4>
+        Purchases over $150,000.00 typically use formal contract procedures (but Simplified Acquisition Procedures can be used if the product or service is a Commercial Item less than $5 Million)
+    </h4>
+    <div data-role="footer"> <a href="#contract">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part2-05-formal-contract.aspx">Find Out More</a>
+    </div>
+</div>
+
+<!--Section 1 Part 3-->
+<div data-role="popup" id="policy" class="ui-content">
+    <h4>
+        The Director develops Treasury-wide policies and procedures for procurement, provides program direction to bureaus and coordinates their procurement activities.
+    </h4>
+        <p>Cathy Higginbotham</p>
+        <p>Acting Director, Office of Procurement</p>
+        <p>Department of the Treasury</p>
+        <p>1500 Pennsylvania Avenue, NW</p>
+        <p>(Attn: 655 15th Street/6183)</p>
+        <p>Washington, DC 20220</p>
+        <p>Telephone (202) 622-1039</p>
+    <div data-role="footer"> <a href="#policy">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part3-index.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="OSDBU" class="ui-content">
+    <h4>
+        The Director is responsible for the effective implementation of the Small Business Act in Treasury’s procurement program.
+    </h4>
+        <p>Jose Arrieta</p>
+        <p>Director, Office of Small and Disadvantaged Business Utilization</p>
+        <p>Department of the Treasury</p>
+        <p>1500 Pennsylvania Avenue, NW</p>
+        <p>Attn: 655 15th Street</p>
+        <p>Washington, DC 20220</p>
+        <p>Telephone:  202-622-0530</p>
+
+    <div data-role="footer"> <a href="#OSDBU">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part3-02-osbd.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="OSDBU_1" class="ui-content">
+    <h4>
+        The Office of Small and Disadvantaged Business Utilization (OSDBU) is responsible for the development and implementation of an effective program of activities directed at ensuring small,
+    </h4>
+    <div data-role="footer"> <a href="#OSDBU_1">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part3-03-osbd-overview.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="competition" class="ui-content">
+    <h4>
+        The Department of the Treasury is firmly committed to competition. In compliance with the Competition in Contracting Act of 1984 (P.L. 98-369),
+    </h4>
+    <p>Ronald Backes</p>
+    <p>Competition Advocate</p>
+    <p>Department of the Treasury</p>
+    <p>1500 Pennsylvania Avenue, NW</p>
+    <p>Attn: 655 15th Street / 6B101</p>
+    <p>Washington, DC 20220</p>
+    <p>Telephone (202) 622-5930</p>
+
+    <div data-role="footer"> <a href="#competition">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part3-04-competition.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="sbo" class="ui-content">
+    <h4>
+        Special consideration is given to small businesses. Every effort is made to insure that small businesses receive a fair share of Treasury prime contracts and subcontracts. The Small Business Administration (SBA)
+    </h4>
+    <div data-role="footer"> <a href="#sbo">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-how-to-part3-05-sbopps.aspx">Find Out More</a>
+    </div>
+</div>
+
+<!--Section 2-Part 1-->
+<div data-role="popup" id="bureau" class="ui-content">
+    <!--Correct Table important-->
+    <table style="font-size:75%;" border="1"><tr>
+        <th  scope="col"><strong>Bureau</strong></th>
+        <th  scope="col"><strong>Specialist</strong></th>
+        <th  scope="col"><strong>Phone</strong></th>
+        <th  scope="col"><strong>Address</strong></th></tr>
+        <tr><td><h4>Community Development Financial Institution</h4></td>
+            <td><a href="mailto:%20%20Holmest@cdfi.treas.gov">Telma Holmes</a></td>
+            <td>(202)-653-0325</td>
+            <td>1801 L Street, NW, Room 6223  Washington, DC</td></tr>
+        <tr><td><h4>Bureau of the Fiscal Service</h4></td>
+            <td><a href="mailto:fms.small.business@fms.treas.gov">Kimberly Witcher</a></td>
+            <td>(202)-874-5213</td>
+            <td>​401 - 14th Street, SW, Suite 270C Washington, DC  20227</td></tr>
+        <tr><td><h4></h4></td>
+            <td><a href="mailto:Loretta.Osuna-Cotto@fiscal.treasury.gov">Loretta Osuna-Cotto</a></td>
+            <td>(304)-480-8717</td>
+            <td>​200 3rd Street, Avery 5F Parkersburg, WV 26106-1328</td></tr>
+        <tr><td><h4>Comptroller of the Currency</h4></td>
+            <td><a href="mailto:rhonda.trent@occ.treas.gov">Rhonda Trent</a></td>
+            <td>(202)-649-6460</td>
+            <td>​Acquisition Management Financial Management 400 7th Street, SW, Washington, DC 20219 </td></tr>
+        </table>
+
+    <div data-role="footer"> <a href="#bureau">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.treasury.gov/resource-center/sb-programs/Pages/contacts-small-biz-specialists.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="specialist" class="ui-content">
+    <table style="font-size:75%;" border="1"><tr>
+        <th  scope="col"><strong>Bureau</strong></th>
+        <th  scope="col"><strong>Specialist</strong></th>
+        <th  scope="col"><strong>Phone</strong></th>
+        <th  scope="col"><strong>Address</strong></th></tr>
+        <tr><td>Community Development Financial Institution</td>
+            <td><a href="mailto:%20%20Holmest@cdfi.treas.gov"><h4>Telma Holmes</h4></a></td>
+            <td>(202)-653-0325</td>
+            <td>1801 L Street, NW, Room 6223  Washington, DC</td></tr>
+        <tr><td>Bureau of the Fiscal Service</td>
+            <td><a href="mailto:fms.small.business@fms.treas.gov"><h4>Kimberly Witcher</h4></a></td>
+            <td>(202)-874-5213</td>
+            <td>​401 - 14th Street, SW, Suite 270C Washington, DC  20227</td></tr>
+        <tr><td><h4></h4></td>
+            <td><a href="mailto:Loretta.Osuna-Cotto@fiscal.treasury.gov"><h4>Loretta Osuna-Cotto</h4></a></td>
+            <td>(304)-480-8717</td>
+            <td>​200 3rd Street, Avery 5F Parkersburg, WV 26106-1328</td></tr>
+        <tr><td>Comptroller of the Currency</td>
+            <td><a href="mailto:rhonda.trent@occ.treas.gov"><h4>Rhonda Trent</h4></a></td>
+            <td>(202)-649-6460</td>
+            <td>​Acquisition Management Financial Management 400 7th Street, SW, Washington, DC 20219 </td></tr>
+    </table>
+    <div data-role="footer"> <a href="#specialist">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.treasury.gov/resource-center/sb-programs/Pages/contacts-small-biz-specialists.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="phone" class="ui-content">
+    <table style="font-size:75%;" border="1"><tr>
+        <th  scope="col"><strong>Bureau</strong></th>
+        <th  scope="col"><strong>Specialist</strong></th>
+        <th  scope="col"><strong>Phone</strong></th>
+        <th  scope="col"><strong>Address</strong></th></tr>
+        <tr><td>Community Development Financial Institution</td>
+            <td><a href="mailto:%20%20Holmest@cdfi.treas.gov">Telma Holmes</a></td>
+            <td><h4>(202)-653-0325</h4></td>
+            <td>1801 L Street, NW, Room 6223  Washington, DC</td></tr>
+        <tr><td>Bureau of the Fiscal Service</td>
+            <td><a href="mailto:fms.small.business@fms.treas.gov">Kimberly Witcher</a></td>
+            <td><h4>(202)-874-5213</h4></td>
+            <td>​401 - 14th Street, SW, Suite 270C Washington, DC  20227</td></tr>
+        <tr><td><h4></h4></td>
+            <td><a href="mailto:Loretta.Osuna-Cotto@fiscal.treasury.gov">Loretta Osuna-Cotto</a></td>
+            <td><h4>(304)-480-8717</h4></td>
+            <td>​200 3rd Street, Avery 5F Parkersburg, WV 26106-1328</td></tr>
+        <tr><td>Comptroller of the Currency</td>
+            <td><a href="mailto:rhonda.trent@occ.treas.gov">Rhonda Trent</a></td>
+            <td><h4>(202)-649-6460</h4></td>
+            <td>​Acquisition Management Financial Management 400 7th Street, SW, Washington, DC 20219 </td></tr>
+    </table>
+    <div data-role="footer"> <a href="#phone">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.treasury.gov/resource-center/sb-programs/Pages/contacts-small-biz-specialists.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="address" class="ui-content">
+    <table style="font-size:75%;" border="1"><tr>
+        <th  scope="col"><strong>Bureau</strong></th>
+        <th  scope="col"><strong>Specialist</strong></th>
+        <th  scope="col"><strong>Phone</strong></th>
+        <th  scope="col"><strong>Address</strong></th></tr>
+        <tr><td>Community Development Financial Institution</td>
+            <td><a href="mailto:%20%20Holmest@cdfi.treas.gov">Telma Holmes</a></td>
+            <td>(202)-653-0325</td>
+            <td><h4>1801 L Street, NW, Room 6223  Washington, DC</h4></td></tr>
+        <tr><td>Bureau of the Fiscal Service</td>
+            <td><a href="mailto:fms.small.business@fms.treas.gov">Kimberly Witcher</a></td>
+            <td>(202)-874-5213</td>
+            <td><h4>​401 - 14th Street, SW, Suite 270C Washington, DC  20227</h4></td></tr>
+        <tr><td><h4></h4></td>
+            <td><a href="mailto:Loretta.Osuna-Cotto@fiscal.treasury.gov">Loretta Osuna-Cotto</a></td>
+            <td>(304)-480-8717</td>
+            <td><h4>​200 3rd Street, Avery 5F Parkersburg, WV 26106-1328</h4></td></tr>
+        <tr><td>Comptroller of the Currency</td>
+            <td><a href="mailto:rhonda.trent@occ.treas.gov">Rhonda Trent</a></td>
+            <td>(202)-649-6460</td>
+            <td><h4>​Acquisition Management Financial Management 400 7th Street, SW, Washington, DC 20219 </h4></td></tr>
+    </table>
+    <div data-role="footer"> <a href="#address">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.treasury.gov/resource-center/sb-programs/Pages/contacts-small-biz-specialists.aspx">Find Out More</a>
+    </div>
+</div>
+
+<!--Section 2 Part 2-->
+<div data-role="popup" id="bureau1" class="ui-content">
+    <table style="font-size:75%;" border="1"><tr>
+        <th  scope="col"><strong>Bureau</strong></th>
+        <th  scope="col"><strong>Specialist</strong></th>
+        <th  scope="col"><strong>Phone</strong></th>
+        <th  scope="col"><strong>Address</strong></th></tr>
+        <tr><td><h10>Comptroller of The Currency</h10></td>
+            <td>Ann Wesson</td>
+            <td>(304)-480-7038</td>
+            <td>Bureau of the Fiscal Service
+                Admin. Resource Ctr
+                200 3rd St, Avery 5-F
+                Parkersburg, WV 26106</td></tr>
+        <tr><td><h10>Headquarters Operations</h10></td>
+            <td>Latonya D.Richardson</td>
+            <td>(202)-613-8600</td>
+            <td>Constellation Center
+                6009 Oxon Hill Road 7th Floor
+                Oxon Hill, MD 20745</td></tr>
+        <tr><td><h10>Bureau of Engraving and Printing</h10></td>
+            <td>Bernadine Stewart</td>
+            <td>(202)-874-3236</td>
+            <td>Room705-A
+            14th & C Streets, SW
+            Washington, DC 20228</td></tr>
+        <tr><td><h10>Bureau of the Fiscal Service</h10></td>
+            <td><a href=""></a>Kimberly Witcher(Financial Management)</td>
+            <td>(202)-874-5213</td>
+            <td>401 14th Street, SW, Room 270C</td></tr>
+    </table>
+    <div data-role="footer"> <a href="#address">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.treasury.gov/resource-center/sb-programs/Pages/contacts-small-biz-specialists.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="specialist1" class="ui-content">
+    <table style="font-size:75%;" border="1"><tr>
+        <th  scope="col"><strong>Bureau</strong></th>
+        <th  scope="col"><strong>Specialist</strong></th>
+        <th  scope="col"><strong>Phone</strong></th>
+        <th  scope="col"><strong>Address</strong></th></tr>
+        <tr><td>Comptroller of The Currency</td>
+            <td><h10>Ann Wesson</h10></td>
+            <td>(304)-480-7038</td>
+            <td>Bureau of the Fiscal Service
+                Admin. Resource Ctr
+                200 3rd St, Avery 5-F
+                Parkersburg, WV 26106</td></tr>
+        <tr><td>Headquarters Operations</td>
+            <td><h10>Latonya D.Richardson</h10></td>
+            <td>(202)-613-8600</td>
+            <td>Constellation Center
+                6009 Oxon Hill Road 7th Floor
+                Oxon Hill, MD 20745</td></tr>
+        <tr><td>Bureau of Engraving and Printing</td>
+            <td><h10>Bernadine Stewart</h10></td>
+            <td>(202)-874-3236</td>
+            <td>Room705-A
+                14th & C Streets, SW
+                Washington, DC 20228</td></tr>
+        <tr><td>Bureau of the Fiscal Service</td>
+            <td><h10>Kimberly Witcher (Financial Management)</h10></td>
+            <td>(202)-874-5213</td>
+            <td>401 14th Street, SW, Room 270C</td></tr>
+    </table>
+
+    <div data-role="footer"> <a href="#address">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.treasury.gov/resource-center/sb-programs/Pages/contacts-small-biz-specialists.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="phone1" class="ui-content">
+    <table style="font-size:75%;" border="1"><tr>
+        <th  scope="col"><strong>Bureau</strong></th>
+        <th  scope="col"><strong>Specialist</strong></th>
+        <th  scope="col"><strong>Phone</strong></th>
+        <th  scope="col"><strong>Address</strong></th></tr>
+        <tr><td>Comptroller of The Currency</td>
+            <td>Ann Wesson</td>
+            <td><h10>(304)-480-7038</h10></td>
+            <td>Bureau of the Fiscal Service
+                Admin. Resource Ctr
+                200 3rd St, Avery 5-F
+                Parkersburg, WV 26106</td></tr>
+        <tr><td>Headquarters Operations</td>
+            <td>Latonya D.Richardson</td>
+            <td><h10>(202)-613-8600</h10></td>
+            <td>Constellation Center
+                6009 Oxon Hill Road 7th Floor
+                Oxon Hill, MD 20745</td></tr>
+        <tr><td>Bureau of Engraving and Printing</td>
+            <td>Bernadine Stewart</td>
+            <td><h10>(202)-874-3236</h10></td>
+            <td>Room705-A
+                14th & C Streets, SW
+                Washington, DC 20228</td></tr>
+        <tr><td>Bureau of the Fiscal Service</td>
+            <td><a href=""></a>Kimberly Witcher(Financial Management)</td>
+            <td><h10>(202)-874-5213</h10></td>
+            <td>401 14th Street, SW, Room 270C</td></tr>
+    </table>
+
+    <div data-role="footer"> <a href="#address">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.treasury.gov/resource-center/sb-programs/Pages/contacts-small-biz-specialists.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="address1" class="ui-content">
+    <table style="font-size:75%;" border="1"><tr>
+        <th  scope="col"><strong>Bureau</strong></th>
+        <th  scope="col"><strong>Specialist</strong></th>
+        <th  scope="col"><strong>Phone</strong></th>
+        <th  scope="col"><strong>Address</strong></th></tr>
+        <tr><td>Comptroller of The Currency</td>
+            <td>Ann Wesson</td>
+            <td>(304)-480-7038</td>
+            <td><h10>Bureau of the Fiscal Service
+                Admin. Resource Ctr
+                200 3rd St, Avery 5-F
+                Parkersburg, WV 26106</h10></td></tr>
+        <tr><td>Headquarters Operations</td>
+            <td>Latonya D.Richardson</td>
+            <td>(202)-613-8600</td>
+            <td><h10>Constellation Center
+                6009 Oxon Hill Road 7th Floor
+                Oxon Hill, MD 20745</h10></td></tr>
+        <tr><td>Bureau of Engraving and Printing</td>
+            <td>Bernadine Stewart</td>
+            <td>(202)-874-3236</td>
+            <td><h10>Room705-A
+                14th & C Streets, SW
+                Washington, DC 20228</h10></td></tr>
+        <tr><td>Bureau of the Fiscal Service</td>
+            <td><a href=""></a>Kimberly Witcher(Financial Management)</td>
+            <td>(202)-874-5213</td>
+            <td><h10>401 14th Street, SW, Room 270C</h10></td></tr>
+    </table>
+
+    <div data-role="footer"> <a href="#address">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.treasury.gov/resource-center/sb-programs/Pages/contacts-small-biz-specialists.aspx">Find Out More</a>
+    </div>
+</div>
+
+<!--Section 2 Part 3-->
+<div data-role="popup" id="name2" class="ui-content">
+    <p>1500 pennsylvania Avenue, NW</p>
+    <p>Mail Code: 655-15th Street, 6th Floor</p>
+    <p>Washington, DC 20220</p>
+
+    <h4>These individuals do not make purchases for the organization. Capability Statements and other marketing materials should be sent to the bureau Small Business Specialist(s)</h4>
+
+    <table style="font-size:75%;" border="1"><tr>
+        <th  scope="col"><strong>Name</strong></th>
+        <th  scope="col"><strong>Office</strong></th>
+        <th  scope="col"><strong>Phone</strong></th></tr>
+        <tr><td><h11><a href="mailto:Jose.Arrieta@Treasury.gov">Jose Arrieta</a></h11></td>
+            <td>Director, Office of Small and Disadvantage Business</td>
+            <td>N/a</td></tr>
+        <tr><td><h11><a href="mailto:Robin.Byrd@treasury.gov">Robin Byrd</a></h11></td>
+            <td>Business Analyst Mentor-Protege, Women-Owned, Ability One</td>
+            <td>(202)-622-8213</td></tr>
+        <tr><td><h11><a href="mailto:Pamela.Wilson@treasury.gov">Pamela Wilson</a></h11></td>
+            <td>Business Analyst Veteran-Owned, SDVOSB, HUBZone, 8(a)</td>
+            <td>(202)-622-1071</td></tr>
+        <tr><td><h11><a href="mailto:Brian.Watson@treasury.gov">Brian Watson</a></h11></td>
+            <td>Management Analyst</td>
+            <td>(202)-622-1499</td></tr>
+        <tr><td><h11>Main Office Number</h11></td>
+            <td></td>
+            <td>(202)-622-0530</td></tr>
+        <tr><td><h11>Fax Number</h11></td>
+            <td></td>
+            <td>(202)-622-7682</td></tr>
+        <tr><td><h11>Martina Williams</h11></td>
+            <td></td>
+            <td>(202)-622-3804</td></tr>
+    </table>
+
+    <div data-role="footer"> <a href="#address">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-contacts-osdbu.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="office2" class="ui-content">
+    <p>1500 pennsylvania Avenue, NW</p>
+    <p>Mail Code: 655-15th Street, 6th Floor</p>
+    <p>Washington, DC 20220</p>
+
+    <h4>These individuals do not make purchases for the organization. Capability Statements and other marketing materials should be sent to the bureau Small Business Specialist(s)</h4>
+
+    <table style="font-size:75%;" border="1"><tr>
+        <th  scope="col"><strong>Name</strong></th>
+        <th  scope="col"><strong>Office</strong></th>
+        <th  scope="col"><strong>Phone</strong></th></tr>
+        <tr><td><a href="mailto:Jose.Arrieta@Treasury.gov">Jose Arrieta</a></td>
+            <td><h11>Director, Office of Small and Disadvantage Business</h11></td>
+            <td>N/a</td></tr>
+        <tr><td><a href="mailto:Robin.Byrd@treasury.gov">Robin Byrd</a></td>
+            <td><h11>Business Analyst Mentor-Protege, Women-Owned, Ability One</h11></td>
+            <td>(202)-622-8213</td></tr>
+        <tr><td><a href="mailto:Pamela.Wilson@treasury.gov">Pamela Wilson</a></td>
+            <td><h11>Business Analyst Veteran-Owned, SDVOSB, HUBZone, 8(a)</h11></td>
+            <td>(202)-622-1071</td></tr>
+        <tr><td><a href="mailto:Brian.Watson@treasury.gov">Brian Watson</a></td>
+            <td><h11>Management Analyst</h11></td>
+            <td>(202)-622-1499</td></tr>
+        <tr><td>Main Office Number</td>
+            <td></td>
+            <td>(202)-622-0530</td></tr>
+        <tr><td>Fax Number</td>
+            <td></td>
+            <td>(202)-622-7682</td></tr>
+        <tr><td>Martina Williams</td>
+            <td></td>
+            <td>(202)-622-3804</td></tr>
+    </table>
+
+    <div data-role="footer"> <a href="#address">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-contacts-osdbu.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div data-role="popup" id="phone2" class="ui-content">
+    <p>1500 pennsylvania Avenue, NW</p>
+    <p>Mail Code: 655-15th Street, 6th Floor</p>
+    <p>Washington, DC 20220</p>
+
+    <h4>These individuals do not make purchases for the organization. Capability Statements and other marketing materials should be sent to the bureau Small Business Specialist(s)</h4>
+
+    <table style="font-size:75%;" border="1"><tr>
+        <th  scope="col"><strong>Name</strong></th>
+        <th  scope="col"><strong>Office</strong></th>
+        <th  scope="col"><strong>Phone</strong></th></tr>
+        <tr><td><a href="mailto:Jose.Arrieta@Treasury.gov">Jose Arrieta</a></td>
+            <td>Director, Office of Small and Disadvantage Business</td>
+            <td>N/a</td></tr>
+        <tr><td><a href="mailto:Robin.Byrd@treasury.gov">Robin Byrd</a></td>
+            <td>Business Analyst Mentor-Protege, Women-Owned, Ability One</td>
+            <td><h11>(202)-622-8213</h11></td></tr>
+        <tr><td><a href="mailto:Pamela.Wilson@treasury.gov">Pamela Wilson</a></td>
+            <td>Business Analyst Veteran-Owned, SDVOSB, HUBZone, 8(a)</td>
+            <td><h11>(202)-622-1071</h11></td></tr>
+        <tr><td><a href="mailto:Brian.Watson@treasury.gov">Brian Watson</a></td>
+            <td>Management Analyst</td>
+            <td><h11>(202)-622-1499</h11></td></tr>
+        <tr><td>Main Office Number</td>
+            <td></td>
+            <td><h11>(202)-622-0530</h11></td></tr>
+        <tr><td>Fax Number</td>
+            <td></td>
+            <td><h11>(202)-622-7682</h11></td></tr>
+        <tr><td>Martina Williams</td>
+            <td></td>
+            <td><h11>(202)-622-3804</h11></td></tr>
+    </table>
+
+    <div data-role="footer"> <a href="#address">Close</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.treasury.gov/about/organizational-structure/offices/Mgt/Pages/dcfo-osdbu-contacts-osdbu.aspx">Find Out More</a>
+    </div>
+</div>
+
+<div role="main" class="ui-content">
+    <p>I'm fourth page in the source order so I'm shown as the page.</p>
+    <p>View internal page called <a href="#bar">bar</a></p>
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed">
+    <h4>Page Footer</h4>
+</div><!-- /footer -->
+
+</div>
+
+<div data-role="page" id="Ext">
+  <!-- slide popup <a href="#myPopup" data-rel="popup" class="ui-btn" data-transition="flow">Flow</a> -->
+
+<div data-role="main" class="ui-content">
+    <a href="#myPopup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-transition="slide" data-position-to="origin">YouTube</a>
+    <div data-role="popup" id="myPopup1" class="ui-content">
+
+
+
+
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Module>
+
+            <ModulePrefs title="youtube channel"></ModulePrefs>
+
+            <Content type="html"><![CDATA[
+
+                <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+                <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+                <style type="text/css">
+                    #player {
+                    width: 300px;
+                    height: 300px;
+                    overflow: hidden;
+                    background: gray;
+                    position: absolute;
+                    border: solid 2px gray;
+                    }
+
+                    .youtube .carousel {
+                    width: 20%;
+                    height: 100%;
+                    overflow: auto;
+                    position: absolute;
+                    right: 0px;
+                    z-index: 3;
+                    }
+
+                    .youtube .thumbnail {
+                    margin: 2px;
+                    width: 80%;
+                    border: 1px solid black;
+                    }
+
+                    .youtube iframe.player {
+                    width: 80%;
+                    height: 300px;
+                    overflow: auto;
+                    border: 0;
+                    }
+                </style>
+
+                <div id="player">
+                </div>
+
+                <script language="JavaScript"  type="text/javascript">
+            (function() {
+    function createPlayer(jqe, video, options) {
+        var ifr = $('iframe', jqe);
+        if (ifr.length === 0) {
+            ifr = $('<iframe scrolling="no">');
+            ifr.addClass('player');
+        }
+        var src = 'http://www.youtube.com/embed/' + video.id;
+        if (options.playopts) {
+            src += '?';
+            for (var k in options.playopts) {
+                src+= k + '=' + options.playopts[k] + '&';
+            }
+            src += '_a=b';
+        }
+        ifr.attr('src', src);
+        jqe.append(ifr);
+    }
+
+    function createCarousel(jqe, videos, options) {
+        var car = $('div.carousel', jqe);
+        if (car.length === 0) {
+            car = $('<div>');
+            car.addClass('carousel');
+            jqe.append(car);
+
+        }
+        $.each(videos, function(i,video) {
+            options.thumbnail(car, video, options);
+        });
+    }
+
+    function createThumbnail(jqe, video, options) {
+        var imgurl = video.thumbnails[0].url;
+        var img = $('img[src="' + imgurl + '"]');
+        if (img.length !== 0) return;
+        img = $('<img>');
+        img.addClass('thumbnail');
+        jqe.append(img);
+        img.attr('src', imgurl);
+        img.attr('title', video.title);
+        img.click(function() {
+            options.player(options.maindiv, video, $.extend(true,{},options,{playopts:{autoplay:1}}));
+        });
+    }
+
+    var defoptions = {
+        autoplay: false,
+        user: null,
+        carousel: createCarousel,
+        player: createPlayer,
+        thumbnail: createThumbnail,
+        loaded: function() {},
+        playopts: {
+            autoplay: 0,
+            egm: 1,
+            autohide: 1,
+            fs: 1,
+            showinfo: 1
+        }
+    };
+
+
+    $.fn.extend({
+        youTubeChannel: function(options) {
+            var md = $(this);
+            md.addClass('youtube');
+            md.addClass('youtube-channel');
+            var allopts = $.extend(true, {}, defoptions, options);
+            allopts.maindiv = md;
+            $.getJSON('http://gdata.youtube.com/feeds/users/' + allopts.user + '/uploads?alt=json-in-script&format=5&callback=?', null, function(data) {
+                var feed = data.feed;
+                var videos = [];
+                $.each(feed.entry, function(i, entry) {
+                    var video = {
+                        title: entry.title.$t,
+                        id: entry.id.$t.match('[^/]*$'),
+                        thumbnails: entry.media$group.media$thumbnail
+                    };
+                    videos.push(video);
+                });
+                allopts.allvideos = videos;
+                allopts.carousel(md, videos, allopts);
+                allopts.player(md, videos[0], allopts);
+                allopts.loaded(videos, allopts);
+            });
+        }
+    });
+
+})();
+
+$(function() {
+    $('#player').youTubeChannel({user:'USTreasGov'});
+});
+        </script>
+
+
+            </Content>
+        </Module>
+
+    </div>
+</div>
+  <div data-role="main" class="ui-content">
+
+      <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/USTreasury" data-widget-id="580077545024053248">Tweets by @USTreasury</a>
+
+      <!--<div data-role="main" class="ui-content">-->
+      <!--<a href="#mtwitter" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-transition="slide" data-position-to="window">Twitter</a>-->
+      <!--<div data-role="popup" id="mtwitter" class="ui-content">-->
+
+      <!--<a href="https://twitter.com/USTreasury" class="twitter-timeline ui-btn" data-dnt="true" data-widget-id="580077545024053248" data-rel="popup" data-transition="slide" data-position-to="origin">Tweets by @USTreasury</a>-->
+      <!--<div data-role="popup" id="https://twitter.com/USTreasury" class="ui-content">-->
+
+      <script>!function(d,s,id)
+	{
+		var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))
+	{
+		js=d.createElement(s);
+		js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+		fjs.parentNode.insertBefore(js,fjs);
+ 		}
+	}
+		(document,"script","twitter-wjs");
+
+		</script>
+
+  </div>
+
+<div data-role="header" data-add-back-btn="true" data-position="fixed">
+    <h1>Extra</h1>
+    <a href="#gridmenu4" data-rel="popup" class="ui-btn ui-btn-right ui-icon-grid ui-btn-icon-left">Menu</a>
+
+    <div data-role="popup" id="gridmenu4">
+        <p><a href="#TF" class="ui-btn">Treasury Forecast</a></p>
+        <p><a href="#VO" class="ui-btn">Vendor</a></p>
+        <p><a href="#TDB" class="ui-btn">Business</a></p>
+        <p><a href="#Ext" class="ui-btn">Extra</a></p>
+    </div>
+
+    <div data-role="navbar" data-grid="d" class="ui-navbar ui-mini" role="navigation">
+        <ul class="ui-grid-d">
+            <li class="ui-block-a"><a href="#welcome" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">Welcome</span></span></a></li>
+            <li class="ui-block-b"><a href="#TF" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Forecast</span></span></a></li>
+            <li class="ui-block-c"><a href="#VO" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Vendor</span></span></a></li>
+            <li class="ui-block-d"><a href="#TDB" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Business</span></span></a></li>
+            <li class="ui-block-e"><a href="#Ext" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c ui-btn ui-btn-inline ui-btn-up-c ui-btn-active ui-state-persist"><span class="ui-btn-inner"><span class="ui-btn-text">Extra</span></span></a></li>
+        </ul>
+
+    </div><!-- /navbar -->
+</div><!-- /header -->
+
+<div role="main" class="ui-content">
+    <p>I'm fifth page in the source order so I'm shown as the page.</p>
+    <p>View internal page called <a href="#bar">bar</a></p>
+
+
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed">
+    <h4>Page Footer</h4>
+</div><!-- /footer -->
+
+</div>
+
+</body>
+
+</html>
